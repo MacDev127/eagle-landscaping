@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Navbar.css';
 import { BiMenu, BiX } from 'react-icons/bi';
+import { FaEnvelope } from 'react-icons/fa';
+import { FaMobileAlt } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -46,6 +48,14 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
           </ul>
+          <div className="contact">
+            <p className="nav_icon">
+              <FaEnvelope /> mail@gmail.com
+            </p>
+            <p className="nav_icon">
+              <FaMobileAlt /> 07712345688
+            </p>
+          </div>
         </nav>
       </header>
     </>
