@@ -80,3 +80,28 @@
 .card:hover .link-title {
   opacity: 1;
 }
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__container {
+    flex-direction: column;
+  }
+  .card {
+    margin: 20px 50px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card__container {
+    flex-direction: column;
+  }
+  .card {
+    margin: 20px 30px;
+    height: 300px;
+  }
+}

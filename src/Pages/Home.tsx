@@ -3,8 +3,7 @@ import Hero from '../Components/Hero/Hero';
 import Text from '../Components/Text/Text';
 import Title from '../Components/Title/Title';
 import './Home.css';
-import Gardening from './Gardening';
-
+import Contact from '../Components/Contact/Contact';
 const Home = () => {
   return (
     <>
@@ -50,6 +49,11 @@ const Home = () => {
                 <div className="link-title">Paving & Decking</div>
               </a>
             </div>
+          </div>
+          <Title>Contact Us</Title>
+
+          <div className="contact__container">
+            <Contact />
           </div>
         </div>
       </section>
