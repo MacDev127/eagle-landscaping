@@ -3,45 +3,45 @@ import './Contact.css';
 
 const Contact: React.FC = () => {
   return (
-    <div className="container">
-      <div className="content">
-        <div className="left-side">
-          <div className="address details">
+    <div className="contact-container">
+      <div className="contact-content">
+        <div className="contact-left-side">
+          <div className="contact-details">
             <i className="fas fa-map-marker-alt"></i>
-            <div className="topic">Address</div>
-            <div className="text-one">Surkhet, NP12</div>
-            <div className="text-two">Birendranagar 06</div>
+            <div className="contact-topic">Address:</div>
+            <div className="contact-text">
+              198 West 21th Street, Suite 721 New York NY 10016
+            </div>
           </div>
-          <div className="phone details">
+          <div className="contact-details">
             <i className="fas fa-phone-alt"></i>
-            <div className="topic">Phone</div>
-            <div className="text-one">+0098 9893 5647</div>
-            <div className="text-two">+0096 3434 5678</div>
+            <div className="contact-topic">Phone:</div>
+            <div className="contact-text">+1235 2355 98</div>
           </div>
-          <div className="email details">
+          <div className="contact-details">
             <i className="fas fa-envelope"></i>
-            <div className="topic">Email</div>
-            <div className="text-one">codinglab@gmail.com</div>
-            <div className="text-two">info.codinglab@gmail.com</div>
+            <div className="contact-topic">Email:</div>
+            <div className="contact-text">info@yoursite.com</div>
+          </div>
+          <div className="contact-details">
+            <i className="fas fa-globe"></i>
+            <div className="contact-topic">Website:</div>
+            <div className="contact-text">yoursite.com</div>
           </div>
         </div>
-        <div className="right-side">
-          <div className="topic-text">Send us a message</div>
-          <p>
-            If you have any work from me or any types of quries related to my
-            tutorial, you can send me message from here. It's my pleasure to
-            help you.
-          </p>
+        <div className="contact-right-side">
           <form action="#">
-            <div className="input-box">
-              <input type="text" placeholder="Enter your name" />
+            <div className="contact-input-box">
+              <input type="text" placeholder="Name" required />
             </div>
-            <div className="input-box">
-              <input type="text" placeholder="Enter your email" />
+            <div className="contact-input-box">
+              <input type="text" placeholder="Email" required />
             </div>
-            <div className="input-box message-box"></div>
-            <div className="button">
-              <input type="button" value="Send Now" />
+            <div className="contact-input-box">
+              <textarea placeholder="Message" required></textarea>
+            </div>
+            <div className="contact-button">
+              <input type="submit" value="Send Message" />
             </div>
           </form>
         </div>
