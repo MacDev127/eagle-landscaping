@@ -50,10 +50,10 @@ const Navbar: React.FC = () => {
           </ul>
           <div className="contact">
             <p className="nav_icon">
-              <FaEnvelope /> mail@gmail.com
+              <FaEnvelope /> eaglelandscaping@gmail.com
             </p>
             <p className="nav_icon">
-              <FaMobileAlt /> 07712345688
+              <FaMobileAlt /> 07564 823319
             </p>
           </div>
         </nav>

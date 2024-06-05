@@ -132,8 +132,8 @@ ul li a {
     justify-content: flex-start;
     position: fixed;
     top: 122px;
-    right: -230px;
-    width: 230px;
+    right: -320px;
+    width: 320px;
     height: 100vh;
     background: #01345b;
     box-sizing: 0 40px 60px rgba(0, 0, 0, 0.1);

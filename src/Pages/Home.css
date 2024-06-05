@@ -8,6 +8,9 @@
   justify-content: center;
   margin: 50px 0;
 }
+.Home {
+  min-height: 100vh;
+}
 
 .title,
 .Text {

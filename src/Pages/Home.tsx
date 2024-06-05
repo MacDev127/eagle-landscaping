@@ -2,6 +2,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import Hero from '../Components/Hero/Hero';
 import Text from '../Components/Text/Text';
 import Title from '../Components/Title/Title';
+import Footer from '../Components/Footer/Footer';
 import './Home.css';
 import Contact from '../Components/Contact/Contact';
 const Home = () => {
@@ -56,6 +57,7 @@ const Home = () => {
             <Contact />
           </div>
         </div>
+        <Footer />
       </section>
     </>
   );

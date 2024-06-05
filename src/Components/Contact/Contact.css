@@ -11,10 +11,15 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
+.contact_heading {
+  font-size: 36px;
+
+  margin-bottom: 30px;
+}
 
 .contact-left-side,
 .contact-right-side {
-  padding: 100px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +33,7 @@
 }
 
 .contact-details {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .contact-details i {
@@ -38,7 +43,34 @@
 
 .contact-topic {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.contact-details_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  transition: ease 0.2s;
 }
 
 .contact-text {
@@ -55,18 +87,30 @@
   margin-bottom: 15px;
 }
 
-.contact-input-box input,
+.contact-input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 18px;
+  margin: 20px 0;
+}
 .contact-input-box textarea {
   width: 100%;
   padding: 10px;
   border: none;
   border-bottom: 1px solid #ccc;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+label {
+  padding: 10px;
 }
 
 .contact-button input[type='submit'] {
-  padding: 10px;
+  padding: 14px;
   background: #01345b;
   color: white;
   border: none;
@@ -76,5 +120,48 @@
 }
 
 .contact-button input[type='submit']:hover {
-  background-color: #16a085;
+  background: #0b4774;
+  transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin-bottom: 150px;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-left-side {
+    padding: 20px 90px;
+    width: 70%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact-right-side {
+    width: 70%;
+    padding: 50px 80px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .contact-container {
+    margin-bottom: 150px;
+    padding: 0 10px;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-left-side {
+    padding: 20px 60px;
+    width: 70%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact-right-side {
+    width: 80%;
+    padding: 50px 30px;
+  }
 }
