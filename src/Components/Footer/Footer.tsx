@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { FaInstagram } from 'react-icons/fa';
-import { FaTiktok } from 'react-icons/fa';
-import { FaFacebookF } from 'react-icons/fa';
+// import { FaInstagram } from 'react-icons/fa';
+// import { FaTiktok } from 'react-icons/fa';
+// import { FaFacebookF } from 'react-icons/fa';
 
 import './Footer.css';
 

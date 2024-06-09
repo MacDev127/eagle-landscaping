@@ -1,0 +1,31 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  height: 60vh;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem; /* Adds spacing between grid items */
+  margin: 100px 0;
+}
+
+.service {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.service span {
+  font-size: 2rem; /* Adjust icon size as needed */
+  margin-top: 0.5rem;
+}
+
+.mower img {
+  height: 48px;
+}

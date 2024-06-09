@@ -115,11 +115,8 @@
 }
 
 .hero__btn:not(:disabled):hover {
-  transform: scale(1.05);
-}
-
-.hero__btn:not(:disabled):hover:active {
-  transform: scale(1.05) translateY(0.125rem);
+  background-color: #0b4774;
+  transition: ease-in-out 0.2s;
 }
 
 .hero__btn:focus {

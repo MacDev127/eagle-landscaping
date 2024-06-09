@@ -1,4 +1,6 @@
 import Navbar from '../Components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
+
 import Hero from '../Components/Hero/Hero';
 import Text from '../Components/Text/Text';
 import Title from '../Components/Title/Title';
@@ -11,44 +13,44 @@ const Home = () => {
       <Navbar />
 
       <section className="Home">
-        <Hero />
+        <Hero
+          heroTitle="EAGLE LANDSCAPING"
+          heroSubtitle="Paving & Gardening Specialists"
+          image="../../public/hero.jpeg"
+          showButton={true}
+        />
 
         <div className="home__container">
           <Title>About Us</Title>
           <Text>
-            Eagle Landscaping, based in London, offers comprehensive gardening
-            and landscaping services across the city and surrounding counties.
-            With decades of experience, we guarantee professional craftsmanship
-            and top-quality results in all our projects, including expert paving
-            solutions. <br /> <br /> We provide personalized on-site
-            consultations and leverage over 20 years of industry expertise to
-            prepare detailed quotations for landscape and paving projects. Our
-            services extend throughout the region, and we are prepared to travel
-            to locations like Surrey, Kent, Essex, and Buckinghamshire based on
-            project requirements.
-            <br /> <br /> Contact us to discuss how we can assist you. A garden
-            should be a seamless extension of your home, a haven for relaxation
-            and enjoyment. Let Eagle Landscaping help you realize your perfect
-            garden, incorporating beautiful paving that complements your vision.
+            At Eagle Landscaping, we transform gardens into beautiful, relaxing
+            havens. Based in London, we offer top-notch gardening and
+            landscaping services, including expert paving, across the city and
+            surrounding areas like Surrey, Kent, Essex, and Buckinghamshire.
+            With over 20 years of experience, we pride ourselves on delivering
+            professional craftsmanship and exceptional results. Our personalized
+            on-site consultations ensure that your vision is realized with
+            precision. Contact us today to discuss your project and discover how
+            Eagle Landscaping can bring your outdoor space to life.
           </Text>
 
           <Title>Services</Title>
           <div className="card__container">
             <div className="card">
-              <a href="/service1">
-                <img src="/hero3.jpeg" alt="Service 1" />
+              <Link to="/gardening">
+                <img src="/hero3.jpeg" alt="Gardening" />
                 <div className="overlay"></div>
 
                 <div className="link-title">Gardening</div>
-              </a>
+              </Link>
             </div>
             <div className="card">
-              <a href="/service2">
-                <img src="/hero4.jpeg" alt="Service 2" />
+              <Link to="/paving">
+                <img src="/hero4.jpeg" alt="Paving" />
                 <div className="overlay"></div>
 
                 <div className="link-title">Paving & Decking</div>
-              </a>
+              </Link>
             </div>
           </div>
           <Title>Contact Us</Title>

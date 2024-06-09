@@ -3,22 +3,36 @@ import './Hero.css';
 import 'animate.css';
 import { TiMessages } from 'react-icons/ti';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  image?: string;
+  heroTitle?: string;
+  heroSubtitle?: string;
+  showButton?: boolean;
+}
+
+const Hero: React.FC<HeroProps> = ({
+  image,
+  heroTitle,
+  heroSubtitle,
+  showButton,
+}) => {
   return (
     <div className="hero__image-container">
-      <img className="hero__img" src="/hero.jpeg" />
+      <img className="hero__img" src={image} />
       <div className="hero__overlay"></div>
       <div className="hero__content">
         <h1 className="hero__title animate__animated animate__fadeInDown">
-          EAGLE LANDSCAPING
+          {heroTitle}
         </h1>
 
         <p className="hero__text animate__animated animate__fadeInUp ">
-          Paving & Gardening Specialists
+          {heroSubtitle}
         </p>
-        <button className="hero__btn ">
-          Get a free quote today <TiMessages style={{ marginLeft: '10px' }} />
-        </button>
+        {showButton && (
+          <button className="hero__btn ">
+            Get a free quote today <TiMessages style={{ marginLeft: '10px' }} />
+          </button>
+        )}
       </div>
     </div>
   );
