@@ -1,0 +1,68 @@
+.images-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.image {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Ensure the overlay also has rounded corners if the image does */
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image:hover img {
+  opacity: 0.9; /* Optional: Slightly reduce the image opacity when hovered */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  opacity: 0;
+  transition: ease 0.2s;
+  z-index: 10; /* Lower z-index for the overlay */
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.icon__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 20;
+}
+
+.image:hover .icon__overlay {
+  opacity: 1;
+}

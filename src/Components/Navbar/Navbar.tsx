@@ -1,17 +1,22 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 import { BiMenu, BiX } from 'react-icons/bi';
-import { FaEnvelope } from 'react-icons/fa';
-import { FaMobileAlt } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const location = useLocation(); // This hook returns the location object that represents the current URL
+
+  useEffect(() => {
+    setMenuOpen(false); // Automatically close the menu whenever the route changes
+  }, [location]);
+
   return (
     <>
       <header>
         <div className="logo">
-          <img src="../../../public/eagle.png" alt="" />
+          <img src="../../../public/eagle.png" alt="Logo" />
         </div>
 
         <nav id="navbar" className={menuOpen ? 'open active' : ''}>
@@ -28,34 +33,46 @@ const Navbar: React.FC = () => {
           </button>
           <ul>
             <li>
-              <Link className="nav_link" to="/">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? 'nav_link active-link' : 'nav_link'
+                }
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav_link" to="/gardening">
+              <NavLink
+                to="/gardening"
+                className={({ isActive }) =>
+                  isActive ? 'nav_link active-link' : 'nav_link'
+                }
+              >
                 Gardening
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav_link" to="/paving">
+              <NavLink
+                to="/paving"
+                className={({ isActive }) =>
+                  isActive ? 'nav_link active-link' : 'nav_link'
+                }
+              >
                 Paving
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="nav_link" to="/contact">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? 'nav_link active-link' : 'nav_link'
+                }
+              >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
-          <div className="contact">
-            <p className="nav_icon">
-              <FaEnvelope /> eaglels@gmail.com
-            </p>
-            <p className="nav_icon">
-              <FaMobileAlt /> 07564 823319
-            </p>
-          </div>
         </nav>
       </header>
     </>

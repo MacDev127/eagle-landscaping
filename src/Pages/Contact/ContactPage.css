@@ -1,0 +1,10 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact__wrapper {
+  margin: 70px 0;
+}

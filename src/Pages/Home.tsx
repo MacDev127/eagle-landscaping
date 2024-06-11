@@ -21,7 +21,7 @@ const Home = () => {
         />
 
         <div className="home__container">
-          <Title>About Us</Title>
+          <Title className="title">About Us</Title>
           <Text>
             At Eagle Landscaping, we transform gardens into beautiful, relaxing
             havens. Based in London, we offer top-notch gardening and
@@ -34,7 +34,7 @@ const Home = () => {
             Eagle Landscaping can bring your outdoor space to life.
           </Text>
 
-          <Title>Services</Title>
+          <Title className="title">Services</Title>
           <div className="card__container">
             <div className="card">
               <Link to="/gardening">
@@ -53,7 +53,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <Title>Contact Us</Title>
+          <Title className="contact__title">Contact Us</Title>
 
           <div className="contact__container">
             <Contact />

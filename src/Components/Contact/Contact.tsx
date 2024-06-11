@@ -13,24 +13,20 @@ const Contact: React.FC = () => {
         <div className="contact-left-side">
           <div className="contact_heading">Get in Touch</div>
           <div className="contact-details">
-            <div className="contact-topic">Phone</div>
             <div className="contact-details_container">
-              <FaPhone />
+              <FaPhone style={{ fontSize: '20px' }} />
 
               <div className="contact-text">+44 7564 823319</div>
             </div>
           </div>
           <div className="contact-details">
-            <div className="contact-topic">Email</div>
-
             <div className="contact-details_container">
-              <FaEnvelope />
+              <FaEnvelope style={{ fontSize: '20px' }} />
 
-              <div className="contact-text">eaglelandscaping@gmail.com</div>
+              <div className="contact-text">eaglels@gmail.com</div>
             </div>
           </div>
           <div className="contact-details">
-            <div className="contact-topic">Find us On</div>
             <div className="socials_container">
               <div className="socials">
                 <a href="">

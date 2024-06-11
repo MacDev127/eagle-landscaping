@@ -4,23 +4,42 @@ import Hero from '../../Components/Hero/Hero';
 import Title from '../../Components/Title/Title';
 import Footer from '../../Components/Footer/Footer';
 import './Gardening.css';
+import { slides } from '../../Components/Images/Data';
+import Images from '../../Components/Images/Images';
+import Contact from '../../Components/Contact/Contact';
 
 // Icons
 import { GiGrass } from 'react-icons/gi';
 import { GiWoodenFence } from 'react-icons/gi';
 import { TbPaintFilled } from 'react-icons/tb';
 import { MdOutlineGrass } from 'react-icons/md';
+
+//Lightbox
 import Lightbox from 'yet-another-react-lightbox';
+import {
+  Captions,
+  Fullscreen,
+  Thumbnails,
+} from 'yet-another-react-lightbox/plugins';
+
+import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/captions.css';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
 const Gardening: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
+  // const [open, setOpen] = useState<boolean>(false);
+  const [index, setIndex] = useState<number>(-1);
+  const gardeningImages = slides.filter(
+    (slide) => slide.category === 'gardening'
+  );
+
   return (
     <>
       <Navbar />
       <Hero image="../../public/hero4.jpeg" heroTitle="Gardening Services" />
 
       <div className="services">
-        <Title>Landscaping & Garden Services</Title>
+        <Title className="title">Landscaping & Garden Services</Title>
         <div className="services__container">
           <div className="service">
             <p>Artificial Grass Installation</p>
@@ -81,10 +100,30 @@ const Gardening: React.FC = () => {
           </div>
         </div>
       </div>
+      <Title className="gallery__title">Gallery</Title>
       <div className="gallery">
-        <Lightbox open={open} />
-        <button onClick={() => setOpen(true)}></button>
+        {/* <button onClick={() => setOpen(true)}>open</button> */}
+        <Images
+          data={gardeningImages}
+          onClick={(currentIndex) => setIndex(currentIndex)}
+        />
+        <Lightbox
+          index={index}
+          open={index >= 0}
+          slides={slides}
+          close={() => setIndex(-1)}
+          plugins={[Captions, Fullscreen, Thumbnails]}
+          captions={{
+            showToggle: true,
+            descriptionTextAlign: 'center',
+          }}
+        />
       </div>
+
+      <div className="garden-contact__container">
+        <Contact />
+      </div>
+
       <Footer />
     </>
   );

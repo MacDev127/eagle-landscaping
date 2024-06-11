@@ -6,8 +6,8 @@ interface TitleProps {
   className?: string;
 }
 
-const Title: React.FC<TitleProps> = ({ children }) => {
-  return <div className="title">{children}</div>;
+const Title: React.FC<TitleProps> = ({ children, className }) => {
+  return <div className={className}>{children}</div>;
 };
 
 export default Title;
