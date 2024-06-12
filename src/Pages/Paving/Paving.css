@@ -49,7 +49,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .services__container {
+  .paving__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 414px) {
+  .paving__container {
     grid-template-columns: repeat(1, 1fr);
   }
 }

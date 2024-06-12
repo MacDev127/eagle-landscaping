@@ -1,15 +1,17 @@
 :root {
   --text_color: #313131;
-  --bg: #f0f0ee;
+  --bg: #fff;
 }
 
 header {
   display: flex;
+  position: sticky;
+  background-color: var(--bg);
+  top: 0;
   animation: none !important;
   transform: none !important;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
   z-index: 1000;
   box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
     rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
@@ -35,8 +37,9 @@ nav ul li {
 ul li a {
   text-decoration: none;
   color: var(--text_color);
-  font-size: 18px;
-  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
   font-weight: 400;
 }
 
@@ -45,7 +48,7 @@ ul li a {
 }
 .nav_link::after {
   content: '';
-  height: 1px;
+  height: 1.5px;
   width: 50%;
   background: black;
   display: block;
@@ -55,20 +58,6 @@ ul li a {
   opacity: 0;
   transition: all 0.2s;
   pointer-events: none;
-}
-
-.contact {
-  display: flex;
-  margin-left: 150px;
-  gap: 20px;
-}
-
-.nav_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-right: 0px;
 }
 
 .nav_link:hover::after,
@@ -94,8 +83,8 @@ ul li a {
 }
 
 .nav-menu {
-  position: absolute;
-  visibility: hidden;
+  position: fixed;
+  display: none;
   top: 0;
   right: 0;
   margin-top: 20px;
@@ -104,19 +93,16 @@ ul li a {
   cursor: pointer;
   background: none;
   border: none;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 768px) {
   header {
     justify-content: space-between;
   }
-  .nav-menu {
-    visibility: visible;
-  }
 
   nav .nav-menu {
     display: flex;
-    position: fixed;
     right: 0.75rem;
     top: 1.5rem;
     z-index: -1;
@@ -168,7 +154,19 @@ ul li a {
   .nav_link:focus {
     color: #fff !important;
   }
+
   .nav_link::after {
+    content: '';
+    height: 1.5px;
+    width: 50%;
+    display: block;
     background: #fff !important;
+
+    position: absolute;
+    left: 2%;
+    bottom: -4px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
   }
 }

@@ -56,4 +56,10 @@
   .services__container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .garden-contact__container {
+    margin: 0 auto; /* Centers the container */
+    width: auto; /* Allows the container to not necessarily take the full width */
+    padding: 0 50px;
+  }
 }

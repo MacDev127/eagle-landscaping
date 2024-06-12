@@ -126,6 +126,15 @@ label {
   background: #0b4774;
   transition: ease-in-out 0.2s;
 }
+.success-message {
+  color: #28a745; /* Green color for success */
+  margin-top: 40px;
+}
+
+.error-message {
+  color: #dc3545; /* Red color for errors */
+  margin-top: 30px;
+}
 
 @media screen and (max-width: 768px) {
   .contact-container {
@@ -137,7 +146,7 @@ label {
   }
 
   .contact-left-side {
-    padding: 20px 90px;
+    padding: 20px 84px;
     width: 70%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

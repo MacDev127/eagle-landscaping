@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import 'animate.css';
 import { TiMessages } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
   image?: string;
@@ -29,9 +30,12 @@ const Hero: React.FC<HeroProps> = ({
           {heroSubtitle}
         </p>
         {showButton && (
-          <button className="hero__btn ">
-            Get a free quote today <TiMessages style={{ marginLeft: '10px' }} />
-          </button>
+          <Link to="/contact">
+            <button className="hero__btn  ">
+              Get a free quote today{' '}
+              <TiMessages style={{ marginLeft: '10px' }} />
+            </button>
+          </Link>
         )}
       </div>
     </div>

@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer/Footer';
 import './Gardening.css';
 import { slides } from '../../Components/Images/Data';
 import Images from '../../Components/Images/Images';
+import Text from '../../Components/Text/Text';
 import Contact from '../../Components/Contact/Contact';
 
 // Icons
@@ -16,18 +17,12 @@ import { MdOutlineGrass } from 'react-icons/md';
 
 //Lightbox
 import Lightbox from 'yet-another-react-lightbox';
-import {
-  Captions,
-  Fullscreen,
-  Thumbnails,
-} from 'yet-another-react-lightbox/plugins';
+import { Fullscreen, Thumbnails } from 'yet-another-react-lightbox/plugins';
 
 import 'yet-another-react-lightbox/styles.css';
-import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
 const Gardening: React.FC = () => {
-  // const [open, setOpen] = useState<boolean>(false);
   const [index, setIndex] = useState<number>(-1);
   const gardeningImages = slides.filter(
     (slide) => slide.category === 'gardening'
@@ -36,7 +31,10 @@ const Gardening: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Hero image="../../public/hero4.jpeg" heroTitle="Gardening Services" />
+      <Hero
+        image="../../public/hero4.jpeg"
+        heroTitle="Landscaping & Gardening"
+      />
 
       <div className="services">
         <Title className="title">Landscaping & Garden Services</Title>
@@ -99,6 +97,19 @@ const Gardening: React.FC = () => {
             </span>
           </div>
         </div>
+        <Text>
+          Eagle Landscaping offers a full range of gardening services to enhance
+          and maintain your outdoor space. Our expertise includes artificial
+          grass installation, comprehensive lawn care such as cleanups, new lawn
+          sowing, turf laying, and drainage, as well as planting services
+          including shrub beds, trees, and hedges. We provide meticulous tree,
+          hedge, and grass cutting, along with general garden maintenance and
+          site clearance. Our cleaning services feature power washing for
+          driveways, patios, and walls. Additionally, we offer fencing
+          solutions, trellis erection, and fence painting. For complex projects,
+          we specialize in retaining wall construction, terracing and leveling,
+          and drainage issue resolution.
+        </Text>
       </div>
       <Title className="gallery__title">Gallery</Title>
       <div className="gallery">
@@ -110,18 +121,17 @@ const Gardening: React.FC = () => {
         <Lightbox
           index={index}
           open={index >= 0}
-          slides={slides}
+          slides={gardeningImages} // Change this to the filtered list
           close={() => setIndex(-1)}
-          plugins={[Captions, Fullscreen, Thumbnails]}
+          plugins={[Fullscreen, Thumbnails]}
           captions={{
             showToggle: true,
             descriptionTextAlign: 'center',
           }}
         />
-      </div>
-
-      <div className="garden-contact__container">
-        <Contact />
+        <div className="garden-contact__container">
+          <Contact />
+        </div>
       </div>
 
       <Footer />

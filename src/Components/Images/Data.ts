@@ -6,7 +6,7 @@ export const slides = [
     category: 'gardening',
   },
   {
-    src: '../../../public/gallery/garden2.jpg',
+    src: '../../../public/gallery/fencing1.jpeg',
     title: 'slide 2',
     description: 'Slide 2',
     category: 'gardening',
@@ -43,7 +43,7 @@ export const slides = [
     category: 'gardening',
   },
   {
-    src: '../../../public/gallery/garden8.jpg',
+    src: '../../../public/gallery/fencing2.jpeg',
     title: 'slide 7',
     description: 'Slide 7',
     category: 'gardening',
@@ -92,7 +92,31 @@ export const slides = [
     category: 'paving',
   },
   {
+    src: '../../../public/gallery/garden8.jpg',
+    title: 'slide 7',
+    description: 'Slide 7',
+    category: 'paving',
+  },
+  {
     src: '../../../public/gallery/paving_hero.jpeg',
+    title: 'slide 7',
+    description: 'Slide 7',
+    category: 'paving',
+  },
+  {
+    src: '../../../public/gallery/decking2.jpeg',
+    title: 'slide 7',
+    description: 'Slide 7',
+    category: 'paving',
+  },
+  {
+    src: '../../../public/gallery/decking1.jpeg',
+    title: 'slide 7',
+    description: 'Slide 7',
+    category: 'paving',
+  },
+  {
+    src: '../../../public/gallery/pergola1.jpeg',
     title: 'slide 7',
     description: 'Slide 7',
     category: 'paving',
