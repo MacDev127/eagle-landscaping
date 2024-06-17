@@ -11,11 +11,9 @@ const ContactPage = () => {
       <section className="contact-page">
         <Title className="title">Contact Us</Title>
 
-        <div className="contact__wrapper">
-          <Contact />
-        </div>
+        <Contact />
+        <Footer />
       </section>
-      <Footer />
     </>
   );
 };

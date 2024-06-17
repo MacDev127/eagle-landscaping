@@ -55,11 +55,9 @@ const Home = () => {
           </div>
           <Title className="contact__title">Contact Us</Title>
 
-          <div className="contact__container">
-            <Contact />
-          </div>
+          <Contact />
+          <Footer />
         </div>
-        <Footer />
       </section>
     </>
   );

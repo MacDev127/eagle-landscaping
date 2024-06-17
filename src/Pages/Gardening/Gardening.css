@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding-top: 3rem;
   min-height: 100vh;
 }
 
@@ -45,6 +45,12 @@
   letter-spacing: 1px;
 }
 
+.gardening_title {
+  text-align: center;
+  margin: 100px 0 40px 0;
+  font-size: 38px;
+}
+
 .garden-contact__container {
   padding: 100px 0;
   display: flex;
@@ -53,6 +59,49 @@
 }
 
 @media screen and (max-width: 768px) {
+  .services {
+    padding-bottom: 9rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .garden-contact__container {
+    margin: 0 auto; /* Centers the container */
+    width: auto; /* Allows the container to not necessarily take the full width */
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .services {
+    padding-bottom: 3rem;
+  }
+  .gardening_title {
+    text-align: center;
+    margin: 100px 0 40px 0;
+    font-size: 38px;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .garden-contact__container {
+    margin: 0 auto; /* Centers the container */
+    width: auto; /* Allows the container to not necessarily take the full width */
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .services {
+    padding-bottom: 1rem;
+  }
+  .gardening_title {
+    text-align: center;
+    margin: 100px 0 40px 0;
+    font-size: 38px;
+  }
+
   .services__container {
     grid-template-columns: repeat(1, 1fr);
   }

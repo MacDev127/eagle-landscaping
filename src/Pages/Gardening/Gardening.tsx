@@ -37,7 +37,9 @@ const Gardening: React.FC = () => {
       />
 
       <div className="services">
-        <Title className="title">Landscaping & Garden Services</Title>
+        <Title className="gardening_title">
+          Landscaping & Gardening Services
+        </Title>
         <div className="services__container">
           <div className="service">
             <p>Artificial Grass Installation</p>
@@ -110,31 +112,29 @@ const Gardening: React.FC = () => {
           we specialize in retaining wall construction, terracing and leveling,
           and drainage issue resolution.
         </Text>
-      </div>
-      <Title className="gallery__title">Gallery</Title>
-      <div className="gallery">
-        {/* <button onClick={() => setOpen(true)}>open</button> */}
-        <Images
-          data={gardeningImages}
-          onClick={(currentIndex) => setIndex(currentIndex)}
-        />
-        <Lightbox
-          index={index}
-          open={index >= 0}
-          slides={gardeningImages} // Change this to the filtered list
-          close={() => setIndex(-1)}
-          plugins={[Fullscreen, Thumbnails]}
-          captions={{
-            showToggle: true,
-            descriptionTextAlign: 'center',
-          }}
-        />
-        <div className="garden-contact__container">
-          <Contact />
+        <Title className="gallery__title">Gallery</Title>
+        <div className="gallery">
+          {/* <button onClick={() => setOpen(true)}>open</button> */}
+          <Images
+            data={gardeningImages}
+            onClick={(currentIndex) => setIndex(currentIndex)}
+          />
+          <Lightbox
+            index={index}
+            open={index >= 0}
+            slides={gardeningImages} // Change this to the filtered list
+            close={() => setIndex(-1)}
+            plugins={[Fullscreen, Thumbnails]}
+            captions={{
+              showToggle: true,
+              descriptionTextAlign: 'center',
+            }}
+          />
         </div>
-      </div>
+        <Contact />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 };

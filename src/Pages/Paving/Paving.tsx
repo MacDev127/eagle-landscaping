@@ -40,7 +40,7 @@ const Paving: React.FC = () => {
           <div className="service">
             <p>Patios & Brick Paving</p>
             <span className="paving__icon">
-              <img src="../../../public/floor-icon.png" alt="" />
+              <img src="../../../public/patio-icon.png" alt="" />
             </span>
           </div>
           <div className="service">
@@ -60,30 +60,30 @@ const Paving: React.FC = () => {
           excels in building custom decking and pergolas to enhance your outdoor
           living area
         </Text>
-      </div>
-      <Title className="gallery__title">Gallery</Title>
-      <div className="gallery">
-        {/* <button onClick={() => setOpen(true)}>open</button> */}
-        <Images
-          data={pavingImages}
-          onClick={(currentIndex) => setIndex(currentIndex)}
-        />
-        <Lightbox
-          index={index}
-          open={index >= 0}
-          slides={pavingImages} // Ensure this uses the filtered pavingImages
-          close={() => setIndex(-1)}
-          plugins={[Fullscreen, Thumbnails]}
-          captions={{
-            showToggle: true,
-            descriptionTextAlign: 'center',
-          }}
-        />
-      </div>
+        <Title className="gallery__title">Gallery</Title>
+        <div className="gallery">
+          {/* <button onClick={() => setOpen(true)}>open</button> */}
+          <Images
+            data={pavingImages}
+            onClick={(currentIndex) => setIndex(currentIndex)}
+          />
+          <Lightbox
+            index={index}
+            open={index >= 0}
+            slides={pavingImages} // Ensure this uses the filtered pavingImages
+            close={() => setIndex(-1)}
+            plugins={[Fullscreen, Thumbnails]}
+            captions={{
+              showToggle: true,
+              descriptionTextAlign: 'center',
+            }}
+          />
+        </div>
 
-      <Contact />
+        <Contact />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 };

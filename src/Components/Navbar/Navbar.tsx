@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 import './Navbar.css';
 import { BiMenu, BiX } from 'react-icons/bi';
 import { useLocation } from 'react-router-dom';
+import { TiMessages } from 'react-icons/ti';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const location = useLocation(); // This hook returns the location object that represents the current URL
+  const location = useLocation();
 
   useEffect(() => {
     setMenuOpen(false); // Automatically close the menu whenever the route changes
@@ -15,9 +17,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header>
-        <div className="logo">
-          <img src="../../../public/eagle.png" alt="Logo" />
-        </div>
+        <img src="../../../public/logo3.png" alt="Logo" />
 
         <nav id="navbar" className={menuOpen ? 'open active' : ''}>
           <button
@@ -72,6 +72,12 @@ const Navbar: React.FC = () => {
                 Contact
               </NavLink>
             </li>
+            <Link to="/contact">
+              <button className="nav__btn  ">
+                Get quote
+                <TiMessages style={{ marginLeft: '10px' }} />
+              </button>
+            </Link>
           </ul>
         </nav>
       </header>
