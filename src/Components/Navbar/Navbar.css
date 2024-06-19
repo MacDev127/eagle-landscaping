@@ -21,7 +21,10 @@ header {
     rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
     rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
-
+.logo img {
+  height: 100px;
+  z-index: 1000;
+}
 /* CSS */
 .nav__btn {
   backface-visibility: hidden;
@@ -128,14 +131,6 @@ ul li a {
   color: #1d1b1b;
 }
 
-.logo {
-  z-index: 1000;
-}
-
-img {
-  height: 100px;
-}
-
 .nav-menu {
   position: fixed;
   display: none;
@@ -229,8 +224,8 @@ img {
     justify-content: space-between;
   }
 
-  img {
-    height: 80px; /* Ensures the image does not exceed the header's height */
+  .logo img {
+    height: 80px;
   }
 
   .nav__btn {
@@ -282,7 +277,7 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 94px;
+    top: 98px;
     right: -230px;
     width: 230px;
     height: 100vh;

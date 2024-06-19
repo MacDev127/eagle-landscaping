@@ -24,6 +24,9 @@
 .contact-logo {
   padding-bottom: 40px;
 }
+.contact-logo img {
+  height: 100px;
+}
 
 .contact-left-side,
 .contact-right-side {
@@ -176,7 +179,7 @@ label {
   }
 
   .contact-left-side {
-    padding: 20px 8ç0px;
+    padding: 20px 80px;
     width: 70%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -192,6 +195,9 @@ label {
     margin-bottom: 150px;
 
     width: 100%;
+  }
+  .contact-logo img {
+    height: 80px;
   }
   .contact-content {
     flex-direction: column;
@@ -231,5 +237,8 @@ label {
   .contact-right-side {
     width: 80%;
     padding: 50px 30px;
+  }
+  .contact-logo img {
+    height: 60px;
   }
 }
