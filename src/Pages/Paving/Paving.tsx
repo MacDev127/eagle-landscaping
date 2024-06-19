@@ -23,10 +23,7 @@ const Paving: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Hero
-        image="../../public/gallery/p-hero.jpeg"
-        heroTitle="Paving & Decking"
-      />
+      <Hero image="/gallery/p-hero.jpeg" heroTitle="Paving & Decking" />
 
       <div className="paving__services">
         <Title className="title">Paving & Decking Services</Title>
@@ -34,19 +31,19 @@ const Paving: React.FC = () => {
           <div className="service">
             <p>Pergolas</p>
             <span className="paving__icon">
-              <img src="../../../public/pergola-icon.png" alt="" />
+              <img src="/gallery/pergola-icon.png" alt="" />
             </span>
           </div>
           <div className="service">
             <p>Patios & Brick Paving</p>
             <span className="paving__icon">
-              <img src="../../../public/patio-icon.png" alt="" />
+              <img src="/gallery/patio-icon.png" alt="" />
             </span>
           </div>
           <div className="service">
             <p>Timber Decking</p>
             <span className="paving__icon">
-              <img src="../../../public/decking-icon.png" alt="" />
+              <img src="/gallery/decking-icon.png" alt="" />
             </span>
           </div>
         </div>

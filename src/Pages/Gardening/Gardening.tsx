@@ -31,10 +31,7 @@ const Gardening: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Hero
-        image="../../public/hero4.jpeg"
-        heroTitle="Landscaping & Gardening"
-      />
+      <Hero image="/gallery/hero4.jpeg" heroTitle="Landscaping & Gardening" />
 
       <div className="services">
         <Title className="gardening_title">
@@ -57,25 +54,25 @@ const Gardening: React.FC = () => {
           <div className="service">
             <p>Planting Services</p>
             <span className="service__icon">
-              <img src="../../../public/planting.png" alt="" />
+              <img src="/gallery/planting.png" alt="" />
             </span>
           </div>
           <div className="service">
             <p>Structural Landscaping</p>
             <span className="service__icon">
-              <img src="../../../public/wall.png" alt="" />
+              <img src="/gallery/wall.png" alt="" />
             </span>
           </div>
           <div className="service">
             <p>Drainage Services</p>
             <span className="service__icon">
-              <img src="../../../public/drainage.png" alt="" />
+              <img src="/gallery/drainage.png" alt="" />
             </span>
           </div>
           <div className="service">
             <p>Garden and Exterior Cleaning Services</p>
             <span className="service__icon-power">
-              <img src="../../../public/power-wash.png" alt="" />
+              <img src="/gallery/power-wash.png" alt="" />
             </span>
           </div>
           <div className="service">
@@ -95,7 +92,7 @@ const Gardening: React.FC = () => {
           <div className="service">
             <p>Tree, Hedge, and Grass Cutting</p>
             <span className="service__icon">
-              <img src="../../public/mower.png" alt="Mower Icon" />
+              <img src="/gallery/mower.png" alt="Mower Icon" />
             </span>
           </div>
         </div>

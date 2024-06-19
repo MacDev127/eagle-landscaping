@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
     <>
       <header>
         <div className="logo">
-          <img src="../../../public/logo3.png" alt="Logo" className="logo" />
+          <img src="/gallery/logo3.png" alt="Logo" className="logo" />
         </div>
 
         <nav id="navbar" className={menuOpen ? 'open active' : ''}>

@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
       <div className="contact-content">
         <div className="contact-left-side">
           <div className="contact-logo">
-            <img src="../../../public/white-logo.png" alt="" />
+            <img src="/gallery/white-logo.png" alt="" />
           </div>
           <div className="contact_heading">Get in Touch</div>
           <div className="contact-details">

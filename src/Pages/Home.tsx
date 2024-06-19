@@ -16,7 +16,7 @@ const Home = () => {
         <Hero
           heroTitle="EAGLE LANDSCAPING"
           heroSubtitle="Paving & Gardening Specialists"
-          image="../../public/hero.jpeg"
+          image="/gallery/hero.jpeg"
           showButton={true}
         />
 
@@ -38,7 +38,7 @@ const Home = () => {
           <div className="card__container">
             <div className="card">
               <Link to="/gardening">
-                <img src="/hero3.jpeg" alt="Gardening" />
+                <img src="/gallery/hero3.jpeg" alt="Gardening" />
                 <div className="overlay"></div>
 
                 <div className="link-title">Gardening</div>
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
             <div className="card">
               <Link to="/paving">
-                <img src="/hero4.jpeg" alt="Paving" />
+                <img src="/gallery/hero4.jpeg" alt="Paving" />
                 <div className="overlay"></div>
 
                 <div className="link-title">Paving & Decking</div>
