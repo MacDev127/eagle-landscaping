@@ -108,8 +108,8 @@ const Contact: React.FC = () => {
                 id="message"
                 name="message"
                 placeholder="Message"
-                cols="30"
-                rows="5"
+                cols={30}
+                rows={5}
                 required
               ></textarea>
             </div>
