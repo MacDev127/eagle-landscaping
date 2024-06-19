@@ -54,7 +54,7 @@ const Gardening: React.FC = () => {
           <div className="service">
             <p>Planting Services</p>
             <span className="service__icon">
-              <img src="/gallery/planting.png" alt="" />
+              <img src="/gallery/planting.jpeg" alt="" />
             </span>
           </div>
           <div className="service">
