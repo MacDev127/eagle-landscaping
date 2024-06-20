@@ -129,9 +129,8 @@ const Gardening: React.FC = () => {
           />
         </div>
         <Contact />
-
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
