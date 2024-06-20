@@ -81,4 +81,8 @@
   .paving__container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .paving__services {
+    padding-bottom: 0;
+  }
 }

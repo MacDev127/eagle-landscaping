@@ -121,7 +121,7 @@ label {
   padding: 10px;
 }
 
-.contact-button input[type='submit'] {
+.contact-button {
   padding: 14px;
   background: #01345b;
   color: white;
@@ -131,7 +131,7 @@ label {
   display: inline-flex;
 }
 
-.contact-button input[type='submit']:hover {
+.contact-button:hover {
   background: #0b4774;
   transition: ease-in-out 0.2s;
 }
@@ -205,7 +205,7 @@ label {
   }
 
   .contact-left-side {
-    padding: 20px 66px;
+    padding: 20px 70px;
     width: 70%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

@@ -220,9 +220,10 @@
   }
 
   .hero__title {
-    font-size: 27px;
+    font-size: 27.5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
 

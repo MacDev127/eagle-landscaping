@@ -113,9 +113,13 @@ const Contact: React.FC = () => {
                 required
               ></textarea>
             </div>
-            <div className="contact-button">
-              <input type="submit" value="Send Message" />
-            </div>
+            <button
+              className="contact-button"
+              type="submit"
+              value="Send Message"
+            >
+              Send Message
+            </button>
           </form>
           {submitted && (
             <div className="success-message">Message sent successfully!</div>
